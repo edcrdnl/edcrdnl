@@ -7,9 +7,9 @@ This Theme is distributed under the terms of the GNU GPL (http://www.gnu.org/lic
 ===========
 ABOUT THEME
 =========== 
-Hi. I'm Eduardo Cardinal and this is my fully customized WordPress theme. It is based on Underscores theme. 
+A clean, fast and responsive multi-purpose theme based on Underscores (_s) with CSS flexbox layout and mobile first design.
 
-This theme is compatible with Wordpress Version 4.5 and above and it supports the new theme customization API (https://codex.wordpress.org/Theme_Customization_API).
+This theme is compatible with Wordpress Version 4.9 and higher and is Gutenberg ready.
 
 Supported browsers: Firefox, Opera, Chrome, Safari and IE9+.
 
