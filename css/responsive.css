@@ -1,0 +1,92 @@
+@media (min-width: 981px) {
+	.page-width {
+		max-width: 1140px;
+	}
+	.hd-width {
+		max-width: 1360px;
+	}
+	.super-width {
+		max-width: 1600px;
+	}
+	.col, .content-area, .widget-area {
+		float: left;
+	}
+	@supports (display: flex) {
+		.row {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+		}
+		.row.no-flex { display: block; }
+		.row::after {
+			flex-basis: 0;
+			order: 1;
+		}
+	}
+	.span-1-2 { width: 50%;	}
+	.span-1-3 { width: 33.333%; }
+	.span-2-3 { width: 66.666%; }
+	.span-1-4 { width: 25%; }
+	.span-3-4 { width: 75%; }
+	.span-1-5 { width: 20%; }
+	.span-2-5 { width: 40%; }
+	.span-3-5 { width: 60%; }
+	.span-4-5 { width: 80%; }
+	.span-1-6 { width: 16.666%; }
+	.span-5-6 { width: 83.333%; }
+	.gutter .span-1-2 { 
+		width: 48.5%;
+		margin-right: 3%;
+	}
+	.gutter .span-1-3, .widget-area { 
+		width: 31%; 
+		margin-right: 3.5%;
+	}
+	.gutter .span-2-3, .content-area { 
+		width: 65.5%;
+		margin-right: 3.5%;
+	}
+	.gutter .span-1-4 { 
+		width: 22.75%;
+		margin-right: 3%;
+	 }
+	.gutter .span-3-4 { 
+		width: 74.25%;
+		margin-right: 3%;
+	}
+	.gutter .span-1-5 { 
+		width: 17.6%;
+		margin-right: 3%;
+	}
+	.gutter .span-2-5 { 
+		width: 38.2%;
+		margin-right: 3%;
+	}
+	.gutter .span-3-5 { 
+		width: 58.8%;
+		margin-right: 3%;
+	}
+	.gutter .span-4-5 { 
+		width: 79.4%; 
+		margin-right: 3%;
+	}
+	.gutter .span-1-6 { 
+		width: 15%;
+		margin-right: 2%;
+	}
+	.gutter .span-5-6 { 
+		width: 83%;
+		margin-right: 3%;
+	}
+	.last, .widget-area { margin-right: 0 !important; }
+	.gutter .col { margin-bottom: 0; }
+	.hide-on-desktop { display: none; }
+	.hide-on-mobile { display: block; }
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}

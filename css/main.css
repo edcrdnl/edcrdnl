@@ -1,0 +1,125 @@
+.page-width, .hd-width, .super-width {
+	max-width: 90%;
+	margin: auto;
+}
+.full-width {
+	width: 100%;
+}
+.row { 
+	display: block;
+
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col, .content-area, .widget-area {
+	width: 100%;
+	box-sizing: border-box;
+}
+.full-mobile {
+	margin-right: 0;
+	margin-left: 0;
+}
+.gutter .col { margin-bottom: 3%; margin-right: 0 !important; }
+.hide-on-desktop { display: block; }
+.hide-on-mobile { display: none; }
+/* Vertical Align Middle */
+.vertical-align-middle {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+/* Vertical Align Bottom  */
+.vertical-align-bottom {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+/* Vertical Align Top & Bottom */
+.vertical-align-top-bottom {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.align-center {
+	text-align: center;
+	align-items: center;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+/* Widget Bullet List Styles */
+.widget ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+.widget ul li::before {
+    content: "\f105";
+    font-family: 'Font Awesome 5 Free', 'FontAwesome';
+    font-weight: 900;
+    color: #ccc;
+    margin-right: 6px;
+}
+.widget ul li {
+    border-bottom: 1px solid #eee;
+    padding-top: 8px;
+	padding-bottom: 8px;
+    padding-left: 6px;
+}
+.widget ul li:first-child {
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+}
+.widget ul li ul li::before {
+    content: "\f0da";
+    margin-right: 6px;
+}
+.widget ul li ul li {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.widget ul li ul li {
+    margin-left: 15px;
+}
+.widget ul li ul li:first-child {
+    padding-top: 10px;
+}
+.widget ul li a {
+	text-decoration: none;
+}
+/* List Styles */
+.entry-content ul, .entry-content ol {
+	padding-left: 0;
+}
+.entry-content ul li, .entry-content ol li {
+	margin-bottom: 10px;
+}
+.entry-content ul li ul, .entry-content ol li ol {
+	padding-top: 10px;
+}
+article.post {
+	margin-bottom: 2.5em;
+}
+.post-thumbnail img {
+	margin-top: 1.5em;
+}
+.entry-meta, .entry-footer {
+	font-size: 0.85em;
+}
