@@ -622,7 +622,6 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
 }
 
@@ -632,28 +631,18 @@ a:hover, a:active {
 	margin: 0;
 	padding-left: 0;
 }
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
 .main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
+	left: auto;
+	top: auto;
 }
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
-	left: 100%;
+	left: auto;
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: auto;
 }
 
 .main-navigation ul li:hover > ul,
@@ -662,7 +651,6 @@ a:hover, a:active {
 }
 
 .main-navigation li {
-	float: left;
 	position: relative;
 }
 
