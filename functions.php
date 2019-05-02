@@ -122,11 +122,13 @@ add_action( 'widgets_init', 'edcrdnl_widgets_init' );
  * Enqueue scripts and styles.
  */
 function edcrdnl_scripts() {
-	wp_enqueue_style( 'edcrdnl-default-css', get_template_directory_uri() . '/css/default.min.css' );
+	wp_enqueue_style( 'font-awesome-5', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', array(), null);
 	
-	wp_enqueue_style( 'edcrdnl-main-css', get_template_directory_uri() . '/css/main.css' );
+	wp_enqueue_style( 'edcrdnl-default', get_template_directory_uri() . '/css/default.css' );
 	
-	wp_enqueue_style( 'edcrdnl-responsive-css', get_template_directory_uri() . '/css/responsive.css' );
+	wp_enqueue_style( 'edcrdnl-main', get_template_directory_uri() . '/css/main.css' );
+	
+	wp_enqueue_style( 'edcrdnl-responsive', get_template_directory_uri() . '/css/responsive.css' );
 	
 	wp_enqueue_style( 'edcrdnl-style', get_stylesheet_uri() );
 
